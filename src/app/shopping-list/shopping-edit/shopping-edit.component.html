@@ -3,10 +3,10 @@
     <form>
       <div class="row">
         <div class="col-sm-5 form-group">
-          <label for="name"></label>
+          <label for="name">Name</label>
           <input 
           type="text" 
-          id="name" 
+          id="name"
           class="form-control"
           #nameInput>
         </div>
@@ -21,9 +21,9 @@
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <button class="btn btn-success" type="submit">Add</button>
-          <button class="btn btn-danger" type="button">Delete</button>
-          <button class="btn btn-primary" type="button">Clear</button>
+          <button (click)="onAddShoppingList()" class="btn btn-success" type="submit">Add</button>
+          <button (click)="onDeleteShoppingList()" class="btn btn-danger" type="button">Delete</button>
+          <button (click)="onClearShoppingList()" class="btn btn-primary" type="button">Clear</button>
         </div>
       </div>
     </form>
